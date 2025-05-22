@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Phone, Mail, MapPin } from 'lucide-react';
 import { useIsMobile } from '../hooks/use-mobile';
@@ -10,7 +11,7 @@ const Contact = () => {
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-block bg-amber-100 text-amber-600 font-medium px-4 py-1.5 rounded-full text-sm mb-4">
+          <div className="inline-block bg-green-100 text-green-700 font-medium px-4 py-1.5 rounded-full text-sm mb-4">
             Contato
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-neutral-900 mb-6">
@@ -36,10 +37,10 @@ const Contact = () => {
               <h3 className="text-lg font-semibold text-neutral-900 mb-2">WhatsApp</h3>
               <p className="text-neutral-600 mb-4">Atendimento rápido e prático</p>
               <a 
-                href="https://wa.me/5511987654321" 
+                href="https://wa.me/5531996609921" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="bg-black hover:bg-neutral-800 text-amber-400 px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium"
+                className="bg-green-700 hover:bg-green-800 text-white px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium"
               >
                 <span>Enviar mensagem</span>
               </a>
@@ -48,34 +49,34 @@ const Contact = () => {
           
           {/* Phone Card */}
           <div className="bg-white rounded-xl shadow-sm overflow-hidden animate-fade-in" style={{ animationDelay: '0.1s' }}>
-            <div className="bg-amber-400 p-6 flex items-center justify-center">
+            <div className="bg-green-600 p-6 flex items-center justify-center">
               <Phone className="w-16 h-16 text-white" />
             </div>
             <div className="p-6 text-center">
               <h3 className="text-lg font-semibold text-neutral-900 mb-2">Telefone</h3>
               <p className="text-neutral-600 mb-4">Fale diretamente conosco</p>
               <a 
-                href="tel:+5511987654321"
-                className="bg-black hover:bg-neutral-800 text-amber-400 px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium"
+                href="tel:+5531996609921"
+                className="bg-green-700 hover:bg-green-800 text-white px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium"
               >
-                <span>(11) 98765-4321</span>
+                <span>(31) 99660-9921</span>
               </a>
             </div>
           </div>
           
           {/* Email Card */}
           <div className="bg-white rounded-xl shadow-sm overflow-hidden animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            <div className="bg-neutral-800 p-6 flex items-center justify-center">
-              <Mail className="w-16 h-16 text-amber-400" />
+            <div className="bg-green-800 p-6 flex items-center justify-center">
+              <Mail className="w-16 h-16 text-white" />
             </div>
             <div className="p-6 text-center">
               <h3 className="text-lg font-semibold text-neutral-900 mb-2">E-mail</h3>
               <p className="text-neutral-600 mb-4">Envie sua mensagem</p>
               <a 
-                href="mailto:contato@contabilidade.com"
-                className="bg-black hover:bg-neutral-800 text-amber-400 px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium"
+                href="mailto:leilanorato1977@gmail.com"
+                className="bg-green-700 hover:bg-green-800 text-white px-6 py-2 rounded-md inline-flex items-center justify-center gap-2 transition-all font-medium"
               >
-                <span>contato@contabilidade.com</span>
+                <span>leilanorato1977@gmail.com</span>
               </a>
             </div>
           </div>
@@ -87,11 +88,11 @@ const Contact = () => {
             {/* Address */}
             <div className="flex items-start">
               <div className="bg-neutral-100 p-3 rounded-full mr-4 flex-shrink-0">
-                <MapPin className="text-neutral-700" size={24} />
+                <MapPin className="text-green-700" size={24} />
               </div>
               <div>
                 <h4 className="text-lg font-semibold text-neutral-900 mb-2">Endereço</h4>
-                <p className="text-neutral-600">Av. Paulista, 1000 - Bela Vista, São Paulo - SP, 01310-100</p>
+                <p className="text-neutral-600">Rua São Lourenço - Belo Horizonte/MG</p>
               </div>
             </div>
             
@@ -106,7 +107,7 @@ const Contact = () => {
                 </div>
                 <div className="flex justify-between">
                   <span className="text-neutral-600">Sábado:</span>
-                  <span className="font-medium text-neutral-900">09:00 - 13:00</span>
+                  <span className="font-medium text-neutral-900">08:00 - 12:00</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-neutral-600">Domingo:</span>
