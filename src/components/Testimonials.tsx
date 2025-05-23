@@ -5,25 +5,25 @@ import { Star, ArrowLeft, ArrowRight } from 'lucide-react';
 const testimonials = [
   {
     id: 1,
-    name: 'Elina Santos',
-    position: 'Diretora da BJT Transportadora',
-    content: 'A ContaPlus tem se mostrado extremamente pontual na entrega de documentos e o suporte é sempre atencioso. Recomendo a todos que procuram um serviço contábil confiável.',
+    name: 'Amanda Oliveira',
+    position: 'Cliente Residencial',
+    content: 'A TOP Mais realiza um trabalho impecável em minha residência. As diaristas são pontuais, atenciosas e muito profissionais. Minha casa nunca esteve tão limpa e organizada!',
     rating: 5,
     image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80'
   },
   {
     id: 2,
-    name: 'Joel Gomes',
-    position: 'Administrador da Torque Implementos',
-    content: 'O comprometimento da equipe da ContaPlus com a satisfação do cliente é notável. Eles sempre atendem às necessidades da nossa empresa com excelência e profissionalismo.',
+    name: 'Carlos Eduardo',
+    position: 'Proprietário de Escritório',
+    content: 'Contratamos o serviço de limpeza comercial da TOP Mais para nosso escritório e ficamos impressionados com a qualidade do serviço. Ambiente sempre limpo e higienizado, o que transmite profissionalismo aos nossos clientes.',
     rating: 5,
     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80'
   },
   {
     id: 3,
-    name: 'João Meneses',
-    position: 'Diretor da Ágil Mecânica',
-    content: 'O atendimento da ContaPlus é prestativo, sempre esclarecendo nossas dúvidas. Os serviços prestados são excelentes e nos ajudam a manter nosso negócio em ordem.',
+    name: 'Juliana Mendes',
+    position: 'Cliente Pós-obra',
+    content: 'Após a reforma do meu apartamento, a equipe da TOP Mais fez um trabalho excepcional na limpeza pós-obra. Removeram todo o pó, resíduos de construção e deixaram o apartamento pronto para morar. Recomendo muito!',
     rating: 5,
     image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80'
   }
@@ -45,14 +45,14 @@ const Testimonials = () => {
       <div className="container-custom">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-block bg-corporate-blue/10 text-corporate-blue font-medium px-4 py-1.5 rounded-full text-sm mb-4">
+          <div className="inline-block bg-green-100 text-green-800 font-medium px-4 py-1.5 rounded-full text-sm mb-4">
             Depoimentos
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
             O que nossos clientes dizem
           </h2>
           <p className="text-gray-600 text-lg">
-            Conheça a experiência de quem já utiliza nossos serviços e confia em nossa expertise.
+            Veja a experiência de quem já conta com nossos serviços de limpeza profissional.
           </p>
         </div>
         
@@ -64,7 +64,7 @@ const Testimonials = () => {
             key={testimonials[activeIndex].id}
           >
             {/* Quotation Mark */}
-            <div className="absolute -top-6 left-8 text-6xl text-corporate-blue/20">"</div>
+            <div className="absolute -top-6 left-8 text-6xl text-green-800/20">"</div>
             
             {/* Content */}
             <div className="flex flex-col md:flex-row gap-8">
@@ -101,7 +101,7 @@ const Testimonials = () => {
           <div className="flex justify-center mt-8 space-x-4">
             <button 
               onClick={prevTestimonial}
-              className="p-2 rounded-full bg-gray-100 hover:bg-corporate-blue/10 text-gray-600 hover:text-corporate-blue transition-colors duration-300"
+              className="p-2 rounded-full bg-gray-100 hover:bg-green-100 text-gray-600 hover:text-green-800 transition-colors duration-300"
               aria-label="Previous testimonial"
             >
               <ArrowLeft size={20} />
@@ -114,7 +114,7 @@ const Testimonials = () => {
                   key={index}
                   onClick={() => setActiveIndex(index)}
                   className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
-                    activeIndex === index ? 'bg-corporate-blue w-6' : 'bg-gray-300'
+                    activeIndex === index ? 'bg-green-700 w-6' : 'bg-gray-300'
                   }`}
                   aria-label={`Go to testimonial ${index + 1}`}
                 />
@@ -123,7 +123,7 @@ const Testimonials = () => {
             
             <button 
               onClick={nextTestimonial}
-              className="p-2 rounded-full bg-gray-100 hover:bg-corporate-blue/10 text-gray-600 hover:text-corporate-blue transition-colors duration-300"
+              className="p-2 rounded-full bg-gray-100 hover:bg-green-100 text-gray-600 hover:text-green-800 transition-colors duration-300"
               aria-label="Next testimonial"
             >
               <ArrowRight size={20} />
