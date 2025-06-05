@@ -92,7 +92,9 @@ const Contact = () => {
               </div>
               <div>
                 <h4 className="text-lg font-semibold text-neutral-900 mb-2">Endereço</h4>
-                <p className="text-neutral-600">Rua São Lourenço - Belo Horizonte/MG</p>
+                <p className="text-neutral-600">Rua São Lourenço, 63</p>
+                <p className="text-neutral-600">Bairro Nossa Senhora das Graças</p>
+                <p className="text-neutral-600">Sete Lagoas - Minas Gerais</p>
               </div>
             </div>
             

@@ -21,7 +21,11 @@ const Footer = () => {
               </li>
               <li className="flex items-start">
                 <MapPin className="mr-3 mt-1 flex-shrink-0" size={18} />
-                <span>Rua São Lourenço - Belo Horizonte/MG</span>
+                <div>
+                  <span>Rua São Lourenço, 63</span><br />
+                  <span>Bairro Nossa Senhora das Graças</span><br />
+                  <span>Sete Lagoas - Minas Gerais</span>
+                </div>
               </li>
             </ul>
           </div>
