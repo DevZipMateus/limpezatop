@@ -1,5 +1,8 @@
+
 import React from 'react';
+import { Instagram } from 'lucide-react';
 import { useIsMobile } from '../hooks/use-mobile';
+
 const Hero = () => {
   const isMobile = useIsMobile();
   return <section className="pt-28 pb-12 md:pt-36 md:pb-20 bg-gradient-to-br from-green-900 to-green-800 relative overflow-hidden">
@@ -35,6 +38,10 @@ const Hero = () => {
               <img src="/lovable-uploads/9a8edb27-0fd0-49ff-9165-64acf1186a7f.png" alt="WhatsApp" className="w-5 h-5" />
               <span>Solicitar Orçamento</span>
             </a>
+            <a href="https://instagram.com/agencia_limpeza_topmais" target="_blank" rel="noopener noreferrer" className="bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-md transition-all flex items-center justify-center gap-2">
+              <Instagram size={20} />
+              <span>Siga no Instagram</span>
+            </a>
             <a href="#services" className="bg-white hover:bg-gray-50 text-green-800 border border-green-400/20 px-6 py-3 rounded-md transition-all transform hover:scale-[1.02] focus:outline-none focus:ring-2 focus:ring-green-400/50 shadow-sm">
               Nossos serviços
             </a>
@@ -51,4 +58,5 @@ const Hero = () => {
       </div>
     </section>;
 };
+
 export default Hero;
